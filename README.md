@@ -1,4 +1,4 @@
-# Yunjae Review ver1
+# Feedback-document
 
 내가 만든 **보고서·자료·공지문**을 8가지 조직 관점에서 검토해 피드백과 수정안을 주는 Claude Code 리뷰 스킬.
 
@@ -9,14 +9,14 @@
 ## 설치
 
 ```
-~/.claude/skills/yunjae-review-ver1/SKILL.md
+~/.claude/skills/feedback-document/SKILL.md
 ```
 
 git으로 받기:
 
 ```bash
 cd ~/.claude/skills
-git clone <이 저장소 주소> yunjae-review-ver1
+git clone <이 저장소 주소> feedback-document
 ```
 
 ## 사용
@@ -24,7 +24,7 @@ git clone <이 저장소 주소> yunjae-review-ver1
 문서를 **붙여넣거나 / 첨부하거나 / 링크**를 주고:
 
 ```
-/yunjae-review-ver1
+/feedback-document
 (아래에 보고서 본문 붙여넣기)
 ```
 
@@ -32,9 +32,10 @@ git clone <이 저장소 주소> yunjae-review-ver1
 
 ## 출력
 
-총평 → 관점별 피드백(인상·강점·우려·수정제안·수용도) → 관점 충돌 → 우선 수정 체크리스트.
+총평 → 우선 수정 체크리스트 → 작성자 확인 → 관점별 피드백(장점·고쳐야 할 점·추가 제안) → 관점 충돌.
 
 ## 참고
 
 - 구글 드라이브 링크를 읽으려면 `/mcp`로 구글 드라이브 인증이 필요합니다.
-- 민감정보(개인정보·미공개 수치)는 외부 제3자 관점에서 노출 위험을 경고합니다.
+- 첨부가 .docx/.pdf/.hwp면 텍스트를 추출해 리뷰합니다.
+- 민감정보(개인정보·미공개 수치)는 발견 즉시 경고합니다.
